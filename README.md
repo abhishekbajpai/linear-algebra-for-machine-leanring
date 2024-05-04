@@ -1,1 +1,1 @@
-# machine-learning
+# Linear Algebra For Machine Learning
