@@ -32,37 +32,86 @@
                 </li>
             </ul>
         </div>
-        <div class="flex-lg-1 h-screen overflow-y-lg-auto">
-            <h1>Welcome to Linear Algebra for Machine Learning </h1>
-            <h2> Vectors</h2>
+        <div class="flex-lg-1 h-screen overflow-y-lg-auto pt-10">
+            <h2> Vectors | Linear Algebra for Machine Learning </h2>
             <p>
                 Before coming to the definition, let's see three distinct but related ideas about vector.
                 Let's start with Physics and then understand in Mathematics and Computers Science
             </p>
 
-            <p>
-                <b>In Physics:</b> Vector's are arrows pointing in space. What defines a given vector is, it's length
-                and
-                the direction it points to. Vector that live in flat plane are 2D
-                <img src="images/2d-vector.png" height="100" width="100" />
-
-                and sitting in broader space that you
-                and I live are 3D vectors.
-                <img src="images/3d-vector.png" height="100" width="100" />
-            </p>
+            <div>
+                <b>In Physics:</b>
+                Vector's are arrows pointing in space. What defines a given vector is, it's length and
+                the direction it points to. Vector that live in flat plane are 2D, the line you see from the origin:
+                <div style="display: flex; width: 100%; justify-content: center;">
+                    <img src="images/2d-vector.png" height="250" width="250" />
+                </div>
+                and sitting in broader space that you and I live are 3D vectors.
+                Point (x, y, z) is vector in 3D space from origin
+                <div style="display: flex; width: 100%; justify-content: center;">
+                    <img src="images/3d-vector.png" height="250" width="250" />
+                </div>
+            </div>
             <p>
                 <b>In Mathematics:</b>
                 Vector's can be anything where there's a sensible notion of adding two vectors
                 and multiplying a vector by a number
             </p>
             <p>
-                <b>In Machine Learning:</b> Vectors are effective way to store objects and object collection.
-                Vector's are used to represent attributes of entities like: age, name, sex and scores etc. and this can
-                be anything.
+                <b>Vectos in Machine Learning:</b>
+            <p style="font-size:10px">
+                <i><b>Note:</b>
+                    Down the line in tutorial, we will discover linear algebra vectors for machine
+                    learning in detail.
+                </i>
             </p>
 
-            <p> <i><b>Note:</b> Down the line in tutorial, we will discover linear algebra vectors for machine learning
-                    in detail. </i></p>
+            <ul>
+                <li> Vectors are effective way to store objects and object collection. </li>
+                <li>
+                    Vector's are used to represent attributes of entities like: age, name, sex and scores etc. and this
+                    can be anything.
+                </li>
+                <li> Vectors can be form of data itself, model parameters and so on. </li>
+
+
+                <li> Vectors are often represented using a lowercase character such as "v"; for example:
+                    <p> v = [
+                        v1,
+                        v2,
+                        v3
+                        ]
+                    </p>
+                </li>
+            </ul>
+            </p>
+
+            <div>
+                <h3> Types of Vector </h3>
+                <p> &nbsp; </p>
+                <div>
+                    <b> Zero Vector, </b> are vectors composed of zeros, and zero only.
+                    All entries of these vectors are denoted by 0.
+                    v = [0, 0, 0]
+                </div>
+
+                <div>
+                    <b> Unit Vector, </b> are vectors composed of single element equal to one, and rest to zero.
+                    All entries of these vectors are denoted by 0.
+                    <br/>
+                    v1 = [0, 1, 0]
+                    v2 = [0, 0, 1]
+                    v3 = [1, 0, 0]
+                </div>
+
+                <div>
+                    <b> Sparse Vector, </b> are vectors composed of zeros, and zero only.
+                    All entries of these vectors are denoted by 0.
+                    →
+                    v = []
+                </div>
+
+            </div>
         </div>
     </main>
 </body>
