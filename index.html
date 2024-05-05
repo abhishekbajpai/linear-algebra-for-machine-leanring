@@ -7,8 +7,19 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <script src="js/bootstrap.bundle.min.js"></script>
-    <title>Abhishek Bajpai | Linear Algebra for Machine Learning </title>
+    <title> Abhishek Bajpai | Linear Algebra | Machine Learning </title>
 </head>
+<style>
+    .vector-img {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .ft-size-10 {
+        font-size: 10px
+    }
+</style>
 
 <body>
     <main class="d-flex flex-column flex-lg-row">
@@ -34,84 +45,87 @@
         </div>
         <div class="flex-lg-1 h-screen overflow-y-lg-auto pt-10">
             <h2> Vectors | Linear Algebra for Machine Learning </h2>
-            <p>
+            <div>
                 Before coming to the definition, let's see three distinct but related ideas about vector.
                 Let's start with Physics and then understand in Mathematics and Computers Science
-            </p>
+            </div>
 
-            <div>
+            <div class="mt-3">
                 <b>In Physics:</b>
-                Vector's are arrows pointing in space. What defines a given vector is, it's length and
+                Vectors are arrows pointing in space. What defines a given vector is, it's length and
                 the direction it points to. Vector that live in flat plane are 2D, the line you see from the origin:
-                <div style="display: flex; width: 100%; justify-content: center;">
+                <div class="vector-img">
                     <img src="images/2d-vector.png" height="250" width="250" />
                 </div>
                 and sitting in broader space that you and I live are 3D vectors.
                 Point (x, y, z) is vector in 3D space from origin
-                <div style="display: flex; width: 100%; justify-content: center;">
+                <div class="vector-img">
                     <img src="images/3d-vector.png" height="250" width="250" />
                 </div>
             </div>
-            <p>
+
+            <div class="mt-3">
                 <b>In Mathematics:</b>
-                Vector's can be anything where there's a sensible notion of adding two vectors
+                Vectors can be anything where there's a sensible notion of adding two vectors
                 and multiplying a vector by a number
-            </p>
-            <p>
-                <b>Vectos in Machine Learning:</b>
-            <p style="font-size:10px">
-                <i><b>Note:</b>
-                    Down the line in tutorial, we will discover linear algebra vectors for machine
-                    learning in detail.
-                </i>
-            </p>
+            </div>
 
-            <ul>
-                <li> Vectors are effective way to store objects and object collection. </li>
-                <li>
-                    Vector's are used to represent attributes of entities like: age, name, sex and scores etc. and this
-                    can be anything.
-                </li>
-                <li> Vectors can be form of data itself, model parameters and so on. </li>
-
-
-                <li> Vectors are often represented using a lowercase character such as "v"; for example:
-                    <p> v = [
-                        v1,
-                        v2,
-                        v3
-                        ]
-                    </p>
-                </li>
-            </ul>
-            </p>
+            <div class="mt-3">
+                <b>Vectors in Machine Learning:</b>
+                <p class="ft-size-10">
+                    <i><b>Note:</b>
+                        Down the line in tutorial, we will discover linear algebra vectors for machine
+                        learning in detail.
+                    </i>
+                </p>
+                <ul>
+                    <li> Vectors are effective way to store objects and object collection. </li>
+                    <li>
+                        Vectors are used to represent attributes of entities like: age, name, sex and scores etc. and
+                        this
+                        can be anything.
+                    </li>
+                    <li> Vectors can be form of data itself, model parameters and so on. </li>
+                    <li> Vectors are often represented using a lowercase character such as "v"; for example:
+                        <p> v = [
+                            v1,
+                            v2,
+                            v3
+                            ]
+                        </p>
+                    </li>
+                </ul>
+            </div>
 
             <div>
-                <h3> Types of Vector </h3>
-                <p> &nbsp; </p>
-                <div>
+                <h3 class="mb-3"> Types of Vector </h3>
+                <div class="mt-2 pb-2">
                     <b> Zero Vector, </b> are vectors composed of zeros, and zero only.
                     All entries of these vectors are denoted by 0.
                     v = [0, 0, 0]
                 </div>
 
-                <div>
+                <div class="mt-2 pb-2">
                     <b> Unit Vector, </b> are vectors composed of single element equal to one, and rest to zero.
                     All entries of these vectors are denoted by 0.
-                    <br/>
+                    <br />
                     v1 = [0, 1, 0]
                     v2 = [0, 0, 1]
                     v3 = [1, 0, 0]
                 </div>
 
-                <div>
+                <div class="mt-2 pb-2">
                     <b> Sparse Vector, </b> are vectors composed of zeros, and zero only.
                     All entries of these vectors are denoted by 0.
                     →
                     v = []
                 </div>
-
             </div>
+
+            <div class="mt-4">
+                <h3 class=""> Vector Operations </h3>
+            </div>
+
         </div>
     </main>
 </body>
