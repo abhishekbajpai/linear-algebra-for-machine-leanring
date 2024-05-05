@@ -5,12 +5,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/bootstrap.bundle.min.js"></script>
     <title>Abhishek Bajpai | Linear Algebra for Machine Learning </title>
 </head>
+
 <body>
-    <main>
-        <h1>Welcome to Linear Algebra for Machine Learning </h1>
-        <h2>Vectors</h2>
+    <main class="d-flex flex-column flex-lg-row">
+        <div class="w-25">
+            <ul class="nav nav-tabs flex-column">
+                <li class="nav-item ">
+                    <a class="nav-link active" aria-current="page" href="#">Vector</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Types of Vector</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Vector Combination (Vector Dependence and Independece), Span and
+                        Basis</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true">Vector Operations</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true">Vector Norms</a>
+                </li>
+            </ul>
+        </div>
+        <div class="flex-lg-1 h-screen overflow-y-lg-auto">
+            <h1>Welcome to Linear Algebra for Machine Learning </h1>
+            <h2> Vectors</h2>
+            <p>
+                Before coming to the definition, let's see three distinct but related ideas about vector.
+                Let's start with Physics and then understand in Mathematics and Computers Science
+            </p>
+
+            <p>
+                <b>In Physics:</b> Vector's are arrows pointing in space. What defines a given vector is, it's length
+                and
+                the direction it points to. Vector that live in flat plane are 2D
+                <img src="images/2d-vector.png" height="100" width="100" />
+
+                and sitting in broader space that you
+                and I live are 3D vectors.
+                <img src="images/3d-vector.png" height="100" width="100" />
+            </p>
+            <p>
+                <b>In Mathematics:</b>
+                Vector's can be anything where there's a sensible notion of adding two vectors
+                and multiplying a vector by a number
+            </p>
+            <p>
+                <b>In Machine Learning:</b> Vectors are effective way to store objects and object collection.
+                Vector's are used to represent attributes of entities like: age, name, sex and scores etc. and this can
+                be anything.
+            </p>
+
+            <p> <i><b>Note:</b> Down the line in tutorial, we will discover linear algebra vectors for machine learning
+                    in detail. </i></p>
+        </div>
     </main>
 </body>
+
 </html>
