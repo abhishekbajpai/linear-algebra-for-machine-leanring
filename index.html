@@ -19,9 +19,13 @@
     .ft-size-10 {
         font-size: 10px
     }
+
+    .mt-50{
+       margin-top:50px
+    }
 </style>
 
-<body>
+<body class="container">
     <main class="d-flex flex-column flex-lg-row">
         <div class="w-25">
             <ul class="nav nav-tabs flex-column">
@@ -87,56 +91,54 @@
                     </li>
                     <li> Vectors can be form of data itself, model parameters and so on. </li>
                     <li> Vectors are often represented using a lowercase character such as "v"; for example:
-                        <p> v = [
-                            v1,
-                            v2,
-                            v3
-                            ]
-                        </p>
+                        <p> $\overrightarrow{v} = \begin{bmatrix}v1 \\v2 \\v3 \end{bmatrix}$ </p>
                     </li>
                 </ul>
             </div>
+
+            <hr />
 
             <div>
                 <h3 class="mb-3"> Types of Vector </h3>
                 <div class="mt-2 pb-2">
                     <b> Zero Vector, </b> are vectors composed of zeros, and zero only.
                     All entries of these vectors are denoted by 0.
-                    v = [0, 0, 0]
+                    <p> $\overrightarrow{v} = \begin{bmatrix}0 & 0 \\0 & 0 \end{bmatrix}$ </p>
                 </div>
 
                 <div class="mt-2 pb-2">
                     <b> Unit Vector, </b> are vectors composed of single element equal to one, and rest to zero.
                     All entries of these vectors are denoted by 0.
                     <br />
-                    v1 = [0, 1, 0]
-                    v2 = [0, 0, 1]
-                    v3 = [1, 0, 0]
+                    <div class="d-flex justify-content-around align-items-center">
+                        <p> $\overrightarrow{v1} = \begin{bmatrix}0 \\1 \\0 \end{bmatrix}$ </p>
+                        <p> $\overrightarrow{v2} = \begin{bmatrix}0 \\0 \\1 \end{bmatrix}$ </p>
+                        <p> $\overrightarrow{v3} = \begin{bmatrix}1 \\0 \\0 \end{bmatrix}$ </p>
+                    </div>
                 </div>
 
                 <div class="mt-2 pb-2">
-                    <b> Sparse Vector, </b> are vectors composed of zeros, and zero only.
-                    All entries of these vectors are denoted by 0.
-                    →
-                    v = []
+                    <b> Sparse Vector, </b> most of the elements are zero, store only non-zero values and their corresponding indices, only the non-zero values are explicitly represented.
                 </div>
             </div>
+
+            <hr />
 
             <div class="mt-4">
                 <h3 class=""> Vector Operations </h3>
                 <div>
                     <b> vector-vector addition </b>
                     <p> Vector addition is element wise addition, and can only possible if both vectors are of same size
-                        i.e. Number of elements to be same. </p>
-                    <p>
-                        For Example:
-                        Let's say we have vector x = [1, 2, 3] and vector y = [4, 5, 6]
-                    <p> x + y = [1 + 4, 2+ 5, 3 + 6] </p>
-                    <p> x + y = [5, 7, 9] </p>
-                    </p>
-
-                    <p> Main properties of vector addition
-                    </p>
+                        i.e. Number of elements to be same. For Example: Let's say we have vector</p>
+                    <div class="d-flex justify-content-center align-items-center">
+                        <div> $\overrightarrow{x} = \begin{bmatrix}1 \\2 \\3 \end{bmatrix}$ </div>, &nbsp;
+                        <div> $\overrightarrow{y} = \begin{bmatrix}4 \\5 \\6 \end{bmatrix}$ </div>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center mt-50">
+                        $\overrightarrow{x} + \overrightarrow{y} = \begin{bmatrix}1 + 4 \\2 + 5 \\3 + 6 \end{bmatrix} =
+                        \begin{bmatrix}5 \\7 \\9 \end{bmatrix}$
+                    </div>
+                    <p> Main properties of vector addition</p>
                     <ul>
                         <li>Associativity: (a + b) + c = a + (b + c) </li>
                         <li>Commutativity: a + b = b + a </li>
@@ -152,20 +154,19 @@
                         scalar. </p>
                     <div>
                         For Example:
-                        Let's say we have vector x = [1, 2, 3] and scalar y = 5
-                        <p> y.x = [5 * 1, 5 * 2, 5 * 3] </p>
-                        <p> y.x = [5, 10, 15] </p>
+                        Let's say we have vector $\overrightarrow{x} = \begin{bmatrix}1 \\2 \\3 \end{bmatrix}$ and
+                        scalar y = 5
+                        <div> $\overrightarrow{x}\cdot y  = \begin{bmatrix}5*1 \\5*2 \\5*3 \end{bmatrix}$ </div>
+                        <div class="mt-50"> $\overrightarrow{x}\cdot y = \begin{bmatrix}5 \\10 \\15
+                            \end{bmatrix}$ </div>
                     </div>
-
                     <p> Main properties of vector addition
                     </p>
                     <ul>
                         <li>Associativity: (a*b)*c = a*(b*c) </li>
                         <li>Commutativity: a + b = b + a </li>
                     </ul>
-
                     <h4> How to do scalar multiplication in pytorch </h4>
-
                 </div>
 
                 <div>
@@ -193,6 +194,26 @@
 
         </div>
     </main>
+
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+
+    <!-- Configuration of math jax -->
+    <script>
+        MathJax = {
+            autoload: {
+                color: [],
+                colorV2: ['color']
+            },
+            tex: {
+                inlineMath: [['$', '$'],
+                ['\\(', '\\)']]
+            },
+            svg: {
+                fontCache: 'global'
+            }
+        }; 
+    </script>
 </body>
 
 </html>
