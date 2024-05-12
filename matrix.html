@@ -13,7 +13,7 @@
 
 <body class="container">
     <main class="d-flex flex-column flex-lg-row">
-        <div class="w-25">
+        <!-- <div class="w-25">
             <ul class="nav nav-tabs flex-column">
                 <li class="nav-item ">
                     <a class="nav-link active" aria-current="page" href="#">Vector</a>
@@ -32,68 +32,30 @@
                     <a class="nav-link disabled" aria-disabled="true">Vector Norms</a>
                 </li>
             </ul>
-        </div>
+        </div> -->
         <div class="flex-lg-1 h-screen overflow-y-lg-auto mt-3">
-            <h2 class="mt-2"> Matrices | Linear Algebra for Machine Learning </h2>
+            <h2 class="mt-2"> Matrices </h2>
             <div>
-                Before coming to the definition, let's see three distinct but related ideas about vector.
-                Let's start with Physics and then understand in Mathematics and Computers Science
-            </div>
-
-            <div class="mt-3">
-                <b>In Physics:</b>
-                Vectors are arrows pointing in space. What defines a given vector is, it's length and
-                the direction it points to. Vector that live in flat plane are 2D, the line you see from the origin:
-                <div class="vector-img">
-                    <img src="images/2d-vector.png" height="250" width="250" />
-                </div>
-                and sitting in broader space that you and I live are 3D vectors.
-                Point (x, y, z) is vector in 3D space from origin
-                <div class="vector-img">
-                    <img src="images/3d-vector.png" height="250" width="250" />
-                </div>
-            </div>
-
-            <div class="mt-3">
-                <b>In Mathematics:</b>
-                Vectors can be anything where there's a sensible notion of adding two vectors
-                and multiplying a vector by a number
-            </div>
-
-            <div class="mt-3">
-                <b>Vectors in Machine Learning:</b>
-                <p class="ft-size-10">
-                    <i><b>Note:</b>
-                        Down the line in tutorial, we will discover linear algebra vectors for machine
-                        learning in detail.
-                    </i>
-                </p>
-                <ul>
-                    <li> Vectors are effective way to store objects and object collection. </li>
-                    <li>
-                        Vectors are used to represent attributes of entities like: age, name, sex and scores etc. and
-                        this
-                        can be anything.
-                    </li>
-                    <li> Vectors can be form of data itself, model parameters and so on. </li>
-                    <li> Vectors are often represented using a lowercase character such as "v"; for example:
-                        <p> $\overrightarrow{v} = \begin{bmatrix}v1 \\v2 \\v3 \end{bmatrix}$ </p>
-                    </li>
-                </ul>
+                A matrix is a rectangular array of <b> <i>numbers, symbols and expressions</i> </b> which are arranged in rows and
+                columns. The numbers, symbols, or expressions in the matrix are called its entries or its elements
+                <p> $\overrightarrow{v} = \begin{bmatrix}1 & 0 \\0 & 0 \end{bmatrix}$ </p>                
             </div>
 
             <hr />
             <!-- Types of Vector -->
             <div>
-                <h3 class="mb-3"> Types of Vector </h3>
+                <h3 class="mb-3"> Types of Matrices </h3>
                 <div class="mt-2 pb-2">
-                    <b> Zero Vector, </b> are vectors composed of zeros, and zero only.
-                    All entries of these vectors are denoted by 0.
-                    <p> $\overrightarrow{v} = \begin{bmatrix}0 & 0 \\0 & 0 \end{bmatrix}$ </p>
+                    <b> Square Matrix, </b> A matrix is said be square matrix if number of rows and columns are equal. Square matrix are sometimes used to represents a linear transformation from a vector space to itself such as <i>Reflection, rotation and shearing</i> 
+                    <div class="d-flex justify-content-center mt-4 mb-3"> $\begin{bmatrix}1 & 2 & 3 \\4
+                        & 5 & 6 \\7 & 8 & 9
+                        \end{bmatrix}$ </div>
+                    
+                    The given matrix is of 3*3 which means this matrix have 3 rows and 3 columns
                 </div>
 
                 <div class="mt-2 pb-2">
-                    <b> Unit Vector, </b> are vectors composed of single element equal to one, and rest to zero.
+                    <b> Rectangle Matrix, </b> are vectors composed of single element equal to one, and rest to zero.
                     All entries of these vectors are denoted by 0.
                     <br />
                     <div class="d-flex justify-content-around align-items-center">
@@ -104,78 +66,40 @@
                 </div>
 
                 <div class="mt-2 pb-2">
-                    <b> Sparse Vector, </b> most of the elements are zero, store only non-zero values and their
+                    <b> Diagonal Matrix, </b> most of the elements are zero, store only non-zero values and their
+                    corresponding indices, only the non-zero values are explicitly represented.
+                </div>
+
+                <div class="mt-2 pb-2">
+                    <b> Scalar Matrix, </b> most of the elements are zero, store only non-zero values and their
+                    corresponding indices, only the non-zero values are explicitly represented.
+                </div>
+
+                <div class="mt-2 pb-2">
+                    <b> Identity Matrix, </b> most of the elements are zero, store only non-zero values and their
+                    corresponding indices, only the non-zero values are explicitly represented.
+                </div>
+
+                <div class="mt-2 pb-2">
+                    <b> Symmetric matrix, </b> most of the elements are zero, store only non-zero values and their
+                    corresponding indices, only the non-zero values are explicitly represented.
+                </div>
+
+                <div class="mt-2 pb-2">
+                    <b> Zero Matrix, </b> most of the elements are zero, store only non-zero values and their
+                    corresponding indices, only the non-zero values are explicitly represented.
+                </div>
+
+                <div class="mt-2 pb-2">
+                    <b> Upper Triangle Matrix, </b> most of the elements are zero, store only non-zero values and their
+                    corresponding indices, only the non-zero values are explicitly represented.
+                </div>
+
+                <div class="mt-2 pb-2">
+                    <b> Lower Triangle Matrix, </b> most of the elements are zero, store only non-zero values and their
                     corresponding indices, only the non-zero values are explicitly represented.
                 </div>
             </div>
-
-            <hr />
-            <!-- Vector Operations -->
-            <div class="mt-4">
-                <h3 class=""> Vector Operations </h3>
-                <div>
-                    <b> vector-vector addition </b>
-                    <p> Vector addition is element wise addition, and can only possible if both vectors are of same size
-                        i.e. Number of elements to be same. For Example: Let's say we have vector</p>
-                    <div class="d-flex justify-content-center align-items-center">
-                        <div> $\overrightarrow{x} = \begin{bmatrix}1 \\2 \\3 \end{bmatrix}$ </div>, &nbsp;
-                        <div> $\overrightarrow{y} = \begin{bmatrix}4 \\5 \\6 \end{bmatrix}$ </div>
-                    </div>
-                    <div class="d-flex justify-content-center align-items-center mt-50">
-                        $\overrightarrow{x} + \overrightarrow{y} = \begin{bmatrix}1 + 4 \\2 + 5 \\3 + 6 \end{bmatrix} =
-                        \begin{bmatrix}5 \\7 \\9 \end{bmatrix}$
-                    </div>
-                    <p> Main properties of vector addition</p>
-                    <ul>
-                        <li>Associativity: (a + b) + c = a + (b + c) </li>
-                        <li>Commutativity: a + b = b + a </li>
-                    </ul>
-                </div>
-
-                <!-- vector-scalar multiplication -->
-                <div>
-                    <b> vector-scalar multiplication </b>
-                    <p> Vector scalar multiplication is element wise multiplication, Here we multiply each element with
-                        scalar. </p>
-                    <div>
-                        For Example: Let's say we have vector $\overrightarrow{x} = \begin{bmatrix}1 \\2 \\3
-                        \end{bmatrix}$ and scalar y = 5
-                        <div> $\overrightarrow{x}\cdot y = \begin{bmatrix}5*1 \\5*2 \\5*3 \end{bmatrix}$ </div>
-                        <div class="mt-50"> $\overrightarrow{x}\cdot y = \begin{bmatrix}5 \\10 \\15
-                            \end{bmatrix}$ </div>
-                    </div>
-                    <p> Main properties of vector addition</p>
-                    <ul>
-                        <li>Associativity: (a*b)*c = a*(b*c) </li>
-                        <li>Commutativity: a + b = b + a </li>
-                    </ul>
-                </div>
-
-                <!-- vector-vector dot product -->
-                <div>
-                    <b> vector-vector dot product </b>
-                    <p> This is one of important feature of matrix multiplication, where you will be given two vectors
-                        and then you will be asked for dot product of those. </p>
-                    <div>
-                        For Example:
-                        Let's say we have $\overrightarrow{x} = \begin{bmatrix}1 \\2 \\3 \end{bmatrix}$ and
-                        $\overrightarrow{y} = \begin{bmatrix}4 \\5 \\6 \end{bmatrix}$
-                        <p> To find the dot product of x.y, we need to transpose vector x, to transpose flip the column
-                            vector to row vector </p>
-                        <p>
-                            $\overrightarrow{x} . \overrightarrow{y} = \begin{bmatrix}1 \\2 \\3 \end{bmatrix} .
-                            \begin{bmatrix}4 \\5 \\6 \end{bmatrix}$
-                            =
-                            [1, 2, 3] . $\begin{bmatrix}4 \\5 \\6 \end{bmatrix}$
-                            <b> = </b> 1 * 4 + 2 * 5 + 3 * 6
-                            <b> = </b> 4 + 10 + 18
-                            <b> = </b> 32
-                        </p>
-                        <p> So, dot produt of two vector is Scalar
-                    </div>
-                </div>
-            </div>
-
         </div>
     </main>
 
