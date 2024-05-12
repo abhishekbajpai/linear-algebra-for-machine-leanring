@@ -20,8 +20,8 @@
         font-size: 10px
     }
 
-    .mt-50{
-       margin-top:50px
+    .mt-50 {
+        margin-top: 50px
     }
 </style>
 
@@ -36,11 +36,11 @@
                     <a class="nav-link" href="#">Types of Vector</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Vector Combination (Vector Dependence and Independece), Span and
-                        Basis</a>
+                    <a class="nav-link disabled" aria-disabled="true">Vector Operations</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link disabled" aria-disabled="true">Vector Operations</a>
+                    <a class="nav-link" href="#">Vector Combination (Vector Dependence and Independece), Span and
+                        Basis</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link disabled" aria-disabled="true">Vector Norms</a>
@@ -97,7 +97,7 @@
             </div>
 
             <hr />
-
+            <!-- Types of Vector -->
             <div>
                 <h3 class="mb-3"> Types of Vector </h3>
                 <div class="mt-2 pb-2">
@@ -118,12 +118,13 @@
                 </div>
 
                 <div class="mt-2 pb-2">
-                    <b> Sparse Vector, </b> most of the elements are zero, store only non-zero values and their corresponding indices, only the non-zero values are explicitly represented.
+                    <b> Sparse Vector, </b> most of the elements are zero, store only non-zero values and their
+                    corresponding indices, only the non-zero values are explicitly represented.
                 </div>
             </div>
 
             <hr />
-
+            <!-- Vector Operations -->
             <div class="mt-4">
                 <h3 class=""> Vector Operations </h3>
                 <div>
@@ -143,52 +144,49 @@
                         <li>Associativity: (a + b) + c = a + (b + c) </li>
                         <li>Commutativity: a + b = b + a </li>
                     </ul>
-
-                    <h4> How to add vector in pytorch </h4>
-
                 </div>
 
+                <!-- vector-scalar multiplication -->
                 <div>
-                    <b> vector scalar multiplication </b>
-                    <p> Vector scalar multiplication is element wise addition, Here we multiply each element with
+                    <b> vector-scalar multiplication </b>
+                    <p> Vector scalar multiplication is element wise multiplication, Here we multiply each element with
                         scalar. </p>
                     <div>
-                        For Example:
-                        Let's say we have vector $\overrightarrow{x} = \begin{bmatrix}1 \\2 \\3 \end{bmatrix}$ and
-                        scalar y = 5
-                        <div> $\overrightarrow{x}\cdot y  = \begin{bmatrix}5*1 \\5*2 \\5*3 \end{bmatrix}$ </div>
+                        For Example: Let's say we have vector $\overrightarrow{x} = \begin{bmatrix}1 \\2 \\3
+                        \end{bmatrix}$ and scalar y = 5
+                        <div> $\overrightarrow{x}\cdot y = \begin{bmatrix}5*1 \\5*2 \\5*3 \end{bmatrix}$ </div>
                         <div class="mt-50"> $\overrightarrow{x}\cdot y = \begin{bmatrix}5 \\10 \\15
                             \end{bmatrix}$ </div>
                     </div>
-                    <p> Main properties of vector addition
-                    </p>
+                    <p> Main properties of vector addition</p>
                     <ul>
                         <li>Associativity: (a*b)*c = a*(b*c) </li>
                         <li>Commutativity: a + b = b + a </li>
                     </ul>
-                    <h4> How to do scalar multiplication in pytorch </h4>
                 </div>
 
+                <!-- vector-vector dot product -->
                 <div>
-                    <b> vector vector multiplication dot product </b>
-                    <p> Vector scalar multiplication is element wise addition, Here we multiply each element with
-                        scalar. </p>
+                    <b> vector-vector dot product </b>
+                    <p> This is one of important feature of matrix multiplication, where you will be given two vectors
+                        and then you will be asked for dot product of those. </p>
                     <div>
                         For Example:
-                        Let's say we have vector x = [1, 2, 3] and scalar y = 5
-                        <p> y.x = [5 * 1, 5 * 2, 5 * 3] </p>
-                        <p> y.x = [5, 10, 15] </p>
+                        Let's say we have $\overrightarrow{x} = \begin{bmatrix}1 \\2 \\3 \end{bmatrix}$ and
+                        $\overrightarrow{y} = \begin{bmatrix}4 \\5 \\6 \end{bmatrix}$
+                        <p> To find the dot product of x.y, we need to transpose vector x, to transpose flip the column
+                            vector to row vector </p>
+                        <p>
+                            $\overrightarrow{x} . \overrightarrow{y} = \begin{bmatrix}1 \\2 \\3 \end{bmatrix} .
+                            \begin{bmatrix}4 \\5 \\6 \end{bmatrix}$
+                            =
+                            [1, 2, 3] . $\begin{bmatrix}4 \\5 \\6 \end{bmatrix}$
+                            <b> = </b> 1 * 4 + 2 * 5 + 3 * 6
+                            <b> = </b> 4 + 10 + 18
+                            <b> = </b> 32
+                        </p>
+                        <p> So, dot produt of two vector is Scalar
                     </div>
-
-                    <p> Main properties of vector addition
-                    </p>
-                    <ul>
-                        <li>Associativity: (a*b)*c = a*(b*c) </li>
-                        <li>Commutativity: a + b = b + a </li>
-                    </ul>
-
-                    <h4> How to do scalar multiplication in pytorch </h4>
-
                 </div>
             </div>
 
