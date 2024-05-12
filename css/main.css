@@ -1,0 +1,13 @@
+.vector-img {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.ft-size-10 {
+    font-size: 10px
+}
+
+.mt-50 {
+    margin-top: 50px
+}
