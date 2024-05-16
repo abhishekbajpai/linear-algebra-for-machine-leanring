@@ -36,9 +36,10 @@
         <div class="flex-lg-1 h-screen overflow-y-lg-auto mt-3">
             <h2 class="mt-2"> Matrices </h2>
             <div>
-                A matrix is a rectangular array of <b> <i>numbers, symbols and expressions</i> </b> which are arranged in rows and
+                A matrix is a rectangular array of <b> <i>numbers, symbols and expressions</i> </b> which are arranged
+                in rows and
                 columns. The numbers, symbols, or expressions in the matrix are called its entries or its elements
-                <p> $\overrightarrow{v} = \begin{bmatrix}1 & 0 \\0 & 0 \end{bmatrix}$ </p>                
+                <p> $\overrightarrow{v} = \begin{bmatrix}1 & 0 \\0 & 0 \end{bmatrix}$ </p>
             </div>
 
             <hr />
@@ -46,43 +47,54 @@
             <div>
                 <h3 class="mb-3"> Types of Matrices </h3>
                 <div class="mt-2 pb-2">
-                    <b> Square Matrix, </b> A matrix is said be square matrix if number of rows and columns are equal. Square matrix are sometimes used to represents a linear transformation from a vector space to itself such as <i>Reflection, rotation and shearing</i> 
+                    <b> Square Matrix, </b> A matrix is said be square matrix if number of rows and columns are equal.
+                    Square matrix are sometimes used to represents a linear transformation from a vector space to itself
+                    such as <i>Reflection, rotation and shearing</i>
+                    The given matrix is of 3 * 3 which means this matrix have 3 rows and 3 columns
                     <div class="d-flex justify-content-center mt-4 mb-3"> $\begin{bmatrix}1 & 2 & 3 \\4
                         & 5 & 6 \\7 & 8 & 9
                         \end{bmatrix}$ </div>
-                    
-                    The given matrix is of 3*3 which means this matrix have 3 rows and 3 columns
                 </div>
 
                 <div class="mt-2 pb-2">
-                    <b> Rectangle Matrix, </b> are vectors composed of single element equal to one, and rest to zero.
-                    All entries of these vectors are denoted by 0.
-                    <br />
-                    <div class="d-flex justify-content-around align-items-center">
-                        <p> $\overrightarrow{v1} = \begin{bmatrix}0 \\1 \\0 \end{bmatrix}$ </p>
-                        <p> $\overrightarrow{v2} = \begin{bmatrix}0 \\0 \\1 \end{bmatrix}$ </p>
-                        <p> $\overrightarrow{v3} = \begin{bmatrix}1 \\0 \\0 \end{bmatrix}$ </p>
-                    </div>
+                    <b> Rectangle Matrix, </b> If the number of rows in a matrix is not equal to the number of columns
+                    in it then the matrix is known as a rectangular matrix.
+                    The given matrix is of 2 * 3 which means this matrix have 2 rows and 3 columns.
+                    <div class="d-flex justify-content-center mt-4 mb-3"> $\begin{bmatrix}1 & 2 \\4
+                        & 5 \\7 & 8
+                        \end{bmatrix}$ </div>
                 </div>
 
                 <div class="mt-2 pb-2">
-                    <b> Diagonal Matrix, </b> most of the elements are zero, store only non-zero values and their
-                    corresponding indices, only the non-zero values are explicitly represented.
+                    <b> Diagonal Matrix, </b> is a square matrix in which all of the elements except the principal
+                    diagonal elements are zeroes.
+                    <div class="d-flex justify-content-center mt-4 mb-3"> $\begin{bmatrix}1 & 0 & 0 \\0
+                        & 5 & 0 \\0 & 0 & 9
+                        \end{bmatrix}$ </div>
                 </div>
 
                 <div class="mt-2 pb-2">
-                    <b> Scalar Matrix, </b> most of the elements are zero, store only non-zero values and their
-                    corresponding indices, only the non-zero values are explicitly represented.
+                    <b> Scalar Matrix, </b> is a square matrix in which all of the principal diagonal elements are equal
+                    and the remaining elements are zero. It is a special case of a diagonal matrix and can be obtained
+                    when an identity matrix is multiplied by a constant numeric value.
+                    <div class="d-flex justify-content-center mt-4 mb-3"> $\begin{bmatrix}2 & 0 & 0 \\0
+                        & 2 & 0 \\0 & 0 & 2
+                        \end{bmatrix}$ </div>
                 </div>
 
                 <div class="mt-2 pb-2">
-                    <b> Identity Matrix, </b> most of the elements are zero, store only non-zero values and their
-                    corresponding indices, only the non-zero values are explicitly represented.
+                    <b> Identity Matrix, </b> is a square matrix whose principal diagonal elements are ones, and the
+                    rest of the elements of the matrix are zeros. An identity matrix is always a square matrix and is
+                    expressed as “I.” Identity Matrix is also known as <i>Unit Matrix</i>.
+                    <div class="d-flex justify-content-center mt-4 mb-3"> $\begin{bmatrix}1 & 0 & 0 \\0
+                        & 1 & 0 \\0 & 0 & 1
+                        \end{bmatrix}$ </div>
+
                 </div>
 
                 <div class="mt-2 pb-2">
-                    <b> Symmetric matrix, </b> most of the elements are zero, store only non-zero values and their
-                    corresponding indices, only the non-zero values are explicitly represented.
+                    <b> Symmetric matrix, </b> In linear algebra, a symmetric matrix is a square matrix that is equal to its transpose.
+                    A^{ \mathrm{ T } }
                 </div>
 
                 <div class="mt-2 pb-2">
